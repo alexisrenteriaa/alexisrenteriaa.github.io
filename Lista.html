@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista - Métodos push e imprimir</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Lista</h1>
+        <div>
+            <label for="elementInput">Elemento a agregar:</label>
+            <input type="text" id="elementInput" placeholder="Escriba un elemento">
+        </div>
+        <div class="buttons">
+            <button onclick="pushElement()">Agregar (push)</button>
+            <button onclick="printList()">Imprimir Lista</button>
+        </div>
+        <div>
+            <h3>Lista</h3>
+            <textarea id="listDisplay" readonly></textarea>
+        </div>
+    </div>
+    <script src="lista.js"></script>
+</body>
+</html>

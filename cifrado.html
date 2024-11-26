@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado con Multiclave</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cifrado con Multiclave</h1>
+        <textarea id="inputText" placeholder="Ingrese texto en mayúsculas" maxlength="500"></textarea>
+        <br>
+        <label for="multiKey">Ingrese multiclave (6 números separados por comas):</label>
+        <input type="text" id="multiKey" placeholder="Ej: 1,2,3,4,5,6" maxlength="11">
+        <br>
+        <div class="buttons">
+            <button onclick="setExample(1)">Ejemplo 1</button>
+            <button onclick="setExample(2)">Ejemplo 2</button>
+            <button onclick="clearFields()">Limpiar</button>
+            <button onclick="encryptText()">Encriptar</button>
+        </div>
+        <div class="result">
+            <h3>Texto Encriptado</h3>
+            <textarea id="outputText" readonly></textarea>
+        </div>
+        <div class="save-buttons">
+            <button onclick="saveMultiKey()">Guardar Multiclave</button>
+            <button onclick="saveEncryptedText()">Guardar Texto Encriptado</button>
+        </div>
+    </div>
+    <script src="cifrado.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Pila</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        .stack-container { margin: 20px auto; width: 300px; }
+        .stack { border: 1px solid #ccc; min-height: 100px; padding: 10px; margin-bottom: 10px; text-align: left; background-color: #f9f9f9; }
+        .stack-item { background-color: #e3e3e3; margin: 5px 0; padding: 10px; border-radius: 5px; }
+        button { margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Pila en JavaScript</h1>
+    <div class="stack-container">
+        <div id="stack" class="stack"></div>
+        <input type="text" id="stackInput" placeholder="Elemento" />
+        <br>
+        <button onclick="push()">Push</button>
+        <button onclick="pop()">Pop</button>
+        <button onclick="peek()">Peek</button>
+        <button onclick="clearStack()">Clear</button>
+        <button onclick="find()">Find</button>
+        <button onclick="isEmpty()">isEmpty</button>
+    </div>
+</body>
+<script src="stack.js"></script>
+</html>

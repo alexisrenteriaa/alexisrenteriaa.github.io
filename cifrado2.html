@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado de César 2 - Desencriptar</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desencriptador de Cifrado de César</h1>
+        <div>
+            <h3>Mensaje Encriptado</h3>
+            <textarea id="encryptedMessage" readonly></textarea>
+        </div>
+        <div>
+            <h3>Llave</h3>
+            <input type="text" id="key" readonly>
+        </div>
+        <div class="buttons">
+            <button onclick="clearFields()">Limpiar</button>
+            <button onclick="loadKey()">Cargar Llave</button>
+            <button onclick="loadEncryptedMessage()">Cargar Mensaje Encriptado</button>
+            <button onclick="decryptMessage()">Desencriptar</button>
+            <button onclick="saveDecryptedMessage()">Guardar Mensaje Desencriptado</button>
+        </div>
+        <div>
+            <h3>Mensaje Desencriptado</h3>
+            <textarea id="decryptedMessage" readonly></textarea>
+        </div>
+    </div>
+    <script src="cifrado2.js"></script>
+</body>
+</html>
